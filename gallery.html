@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>hhh | Gallery</title>
+            <link rel="stylesheet" href="css/base.css" />
+            <link rel="stylesheet" href="css/gallery.css" />
+            </head>
+            <body>
+            <header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">hhh</a>
+    
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+            <main class="gallery-page">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">hvh Showcase</h1>
+      <p class="hero-subtitle">Where precision meets innovation in every project</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filter -->
+  <section class="gallery-filter">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+      <button class="filter-btn" data-filter="sustainable">Sustainable</button>
+      <button class="filter-btn" data-filter="renovation">Renovation</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-grid">
+    <div class="grid-container">
+      <!-- Project 1 -->
+      <a href="#project-1" class="grid-item residential" data-category="residential">
+        <img src="images/gallery1.jpg" alt="Modern residential complex">
+        <div class="project-overlay">
+          <h3>Skyline Residences</h3>
+          <p>Luxury high-rise with panoramic views</p>
+        </div>
+      </a>
+      
+      <!-- Project 2 -->
+      <a href="#project-2" class="grid-item commercial" data-category="commercial">
+        <img src="images/gallery2.jpg" alt="Contemporary office building">
+        <div class="project-overlay">
+          <h3>Tech Hub Plaza</h3>
+          <p>Innovative workspace design</p>
+        </div>
+      </a>
+      
+      <!-- Projects 3-12 -->
+      <a href="#project-3" class="grid-item industrial" data-category="industrial">
+        <img src="images/gallery3.jpg" alt="Industrial warehouse">
+        <div class="project-overlay">
+          <h3>Logistics Center</h3>
+          <p>Efficient industrial space</p>
+        </div>
+      </a>
+      
+      <a href="#project-4" class="grid-item sustainable" data-category="sustainable">
+        <img src="images/gallery4.jpg" alt="Green building">
+        <div class="project-overlay">
+          <h3>Eco Tower</h3>
+          <p>LEED Platinum certified</p>
+        </div>
+      </a>
+      
+      <a href="#project-5" class="grid-item renovation" data-category="renovation">
+        <img src="images/gallery5.jpg" alt="Historic building renovation">
+        <div class="project-overlay">
+          <h3>Heritage Restoration</h3>
+          <p>Preserving architectural history</p>
+        </div>
+      </a>
+      
+      <a href="#project-6" class="grid-item residential" data-category="residential">
+        <img src="images/gallery6.jpg" alt="Minimalist home">
+        <div class="project-overlay">
+          <h3>Cliffside Villa</h3>
+          <p>Harmony with nature</p>
+        </div>
+      </a>
+      
+      <a href="#project-7" class="grid-item commercial" data-category="commercial">
+        <img src="images/gallery7.jpg" alt="Retail complex">
+        <div class="project-overlay">
+          <h3>Urban Marketplace</h3>
+          <p>Mixed-use development</p>
+        </div>
+      </a>
+      
+      <a href="#project-8" class="grid-item industrial" data-category="industrial">
+        <img src="images/gallery8.jpg" alt="Manufacturing facility">
+        <div class="project-overlay">
+          <h3>Production Plant</h3>
+          <p>Advanced manufacturing</p>
+        </div>
+      </a>
+      
+      <a href="#project-9" class="grid-item sustainable" data-category="sustainable">
+        <img src="images/gallery9.jpg" alt="Solar panel installation">
+        <div class="project-overlay">
+          <h3>Solar Community</h3>
+          <p>Net-zero energy</p>
+        </div>
+      </a>
+      
+      <a href="#project-10" class="grid-item renovation" data-category="renovation">
+        <img src="images/gallery10.jpg" alt="Brownstone renovation">
+        <div class="project-overlay">
+          <h3>Urban Renewal</h3>
+          <p>Modernizing classic architecture</p>
+        </div>
+      </a>
+      
+      <a href="#project-11" class="grid-item residential" data-category="residential">
+        <img src="images/gallery11.jpg" alt="Lakeside cabins">
+        <div class="project-overlay">
+          <h3>Lakeview Retreat</h3>
+          <p>Rustic modern design</p>
+        </div>
+      </a>
+      
+      <a href="#project-12" class="grid-item commercial" data-category="commercial">
+        <img src="images/gallery12.jpg" alt="Hotel lobby">
+        <div class="project-overlay">
+          <h3>Boutique Hotel</h3>
+          <p>Luxury hospitality</p>
+        </div>
+      </a>
+    </div>
+    
+    <button class="load-more">Load More Projects</button>
+  </section>
+
+  <!-- Project Modal (hidden by default) -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <div class="modal-body">
+        <img src="" alt="" class="modal-image">
+        <div class="modal-text">
+          <h2 class="modal-title"></h2>
+          <p class="modal-description"></p>
+          <div class="modal-details">
+            <p><strong>Location:</strong> <span class="modal-location"></span></p>
+            <p><strong>Year:</strong> <span class="modal-year"></span></p>
+            <p><strong>Size:</strong> <span class="modal-size"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2 class="section-title">Client Experiences</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <div class="client-logo">
+          <i class="ph ph-buildings"></i>
+        </div>
+        <blockquote>
+          "Working with hvh transformed our vision into reality with precision we didn't think possible."
+        </blockquote>
+        <cite>— Global Development Corp</cite>
+      </div>
+      
+      <div class="testimonial">
+        <div class="client-logo">
+          <i class="ph ph-house"></i>
+        </div>
+        <blockquote>
+          "The attention to detail and innovative solutions exceeded all our expectations."
+        </blockquote>
+        <cite>— Heritage Homes</cite>
+      </div>
+      
+      <div class="testimonial">
+        <div class="client-logo">
+          <i class="ph ph-tree"></i>
+        </div>
+        <blockquote>
+          "Sustainable design that doesn't compromise on aesthetics - exactly what we needed."
+        </blockquote>
+        <cite>— EcoFuture Initiatives</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to start your project?</h2>
+      <p>Our team is ready to bring your vision to life with the same precision showcased here.</p>
+      <div class="cta-buttons">
+        <a href="/contact" class="btn btn-primary">Get a Quote</a>
+        <a href="/portfolio" class="btn btn-secondary">View Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/gallery.css">
+<script src="js/base.js"></script>
+<script src="js/gallery.js"></script>
+
+            <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">hhh</div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+    
+    <div class="footer-legal">
+      <p>&copy; 2023 hhh. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+            <script src="js/base.js"></script>
+            <script src="js/gallery.js"></script>
+            </body>
+            </html>
+            
